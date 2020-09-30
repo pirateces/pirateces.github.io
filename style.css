@@ -3,7 +3,7 @@ body {
 }
 header,
 footer {
-	background-color: #920000;
+	background-color: #000;
 	color: #fff;
 	padding: 10px;
 }
@@ -16,11 +16,10 @@ footer {
 h1,
 h2 {
 	margin: 0;
-  color: #000094;
 }
 
 h2, #currentdate {
-	color: #009400;
+	color: yellow;
 }
 
 main {
@@ -43,3 +42,4 @@ label {
 	display: block;
 	margin: 5px;
 }
+
