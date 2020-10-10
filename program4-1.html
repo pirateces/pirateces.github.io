@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Basic HTML</title>
+    <title>Adding Two Numbers Together</title>
 </head>
 <body>
     <header>
@@ -27,15 +27,15 @@
         **********/
         function addNumbers() {
         //Input
-        let number1 = ParseFloat(document.getElementById('number1').value);
-        let number2 = ParseFloat(document.getElementById('number2').value);
+        let X = ParseFloat(document.getElementById('number1').value);
+        let y = ParseFloat(document.getElementById('number2').value);
 
         //Process
-        let sum = number1 + number2;
+        let sum = x + y;
 
         //Output
-        document.getElementById('output').innerHTML = "The sum of " + number1 " and "
-        + number2 " equals " + sum + ".";
+        document.getElementById('output').innerHTML = "The sum of " + x " and "
+        + y " equals " + sum + ".";
         }
     </script>
 </body>
