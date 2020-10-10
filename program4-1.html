@@ -22,7 +22,21 @@
         &copy;2020 &bull; Christie Crook &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        
+        /**********
+        * Making a program to add two numbers together
+        **********/
+        function addNumbers() {
+        //Input
+        let number1 = ParseFloat(document.getElementById('number1').value);
+        let number2 = ParseFloat(document.getElementById('number2').value);
+
+        //Process
+        let sum = number1 + number2;
+
+        //Output
+        document.getElementById('output').innerHTML = "The sum of " + number1 " and "
+        + number2 " equals " + sum + ".";
+        }
     </script>
 </body>
 </html>
