@@ -9,8 +9,10 @@ function AfterTaxPay() {
     //Process
     let regularRate = regularHoursWorked * 15;
     let overTimeRate = 22.5 * overHoursWorked;
-    let taxAmount = .15 * (15 * regularHoursWorked + 22.5 * overHoursWorked)
+    let taxAmount = .15 * (regularRate + overTimeRate)
     let afterTaxPay = regularRate + overTimeRate - taxAmount;
+    let afterTaxes = afterTaxPay.toFixed(2);
+
 
     //Output
     document.getElementById('output').innerHTML = "Take home pay is" + afterTaxPay + ".";
