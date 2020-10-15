@@ -1,7 +1,7 @@
 /***********
-* Making a program to add two numbers together
+* Making a program to convert pounds to kilograms
 **********/
-function addNumbers() {
+function poundsKilograms() {
     //Input
     let pounds = parseFloat(document.getElementById("pounds").value);
 
