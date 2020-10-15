@@ -7,7 +7,7 @@ function addNumbers() {
 
     //Process
     let kilograms = pounds * 0.453592;
-    let kilograms = kilograms.toFixed(1);
+    let kilos = kilograms.toFixed(1);
 
     //Output
-    document.getElementById('output').innerHTML = "The conversion is " + kilograms + ".";
+    document.getElementById('output').innerHTML = "The conversion is " + kilos + ".";
