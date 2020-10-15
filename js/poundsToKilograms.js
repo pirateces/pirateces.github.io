@@ -11,3 +11,4 @@ function poundsKilograms() {
 
     //Output
     document.getElementById('output').innerHTML = "The conversion is " + kilos + ".";
+}
