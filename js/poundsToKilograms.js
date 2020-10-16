@@ -10,5 +10,5 @@ function poundsKilograms() {
     let kilos = kilograms.toFixed(1);
 
     //Output
-    document.getElementById('output').innerHTML = "The conversion is " + kilos + ".";
+    document.getElementById('output').innerHTML = "The conversion is " + kilos + "Kg.";
 }
