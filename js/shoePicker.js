@@ -1,14 +1,22 @@
 /***********
-* Making a program choose shoes
+* Making a program to choose shoes
 **********/
 function shoePicker() {
     //Input
-    let pounds = parseFloat(document.getElementById("pounds").value);
+    let weather = document.getElementById("weather");
+    let shoes;
 
     //Process
-    let kilograms = pounds * 0.453592;
-    let kilos = kilograms.toFixed(1);
+    if (weather == 'Hot'){
+        shoes = 'sandals to keep cool';}
+    else if (weather == 'Rain'){
+        shoes = 'golashes to keep dry';}
+    else if (weather == 'Snow'){
+        shoes = 'boots to keep warm';}
+    else {
+        shoes = 'shoes to cover your feet';
+    }
 
     //Output
-    document.getElementById('output').innerHTML = "The shoes of choice are: " + shoes + ".";
+   document.getElementById('output').innerHTML = "The choice is: " + shoes + ".";
 }
