@@ -10,7 +10,7 @@ function wakeUP() {
     let getUp = 'Get UP!!!';
 
     //Process
-    if (dayOfWeek == 6 || dayOfWeek == 7){
+    if (dayOfWeek == 6 || dayOfWeek == 0){
         getUp = 'feel free to sleep in';}
         if (month == 1 && dayOfMonth == 1){
             getUp = 'feel free to sleep in';
