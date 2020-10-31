@@ -3,7 +3,7 @@
 **********/
 function shoePicker() {
     //Input
-    let weather = document.getElementById("weather");
+    let weather = document.getElementById("weather").value;
     let shoes;
 
     //Process
