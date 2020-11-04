@@ -10,7 +10,7 @@ function discountDay() {
     let total;
 
     //Process
-    if (dayOfWeek == 2 || dayOfWeek == 3 && subtotal >= 50){
+    if (dayOfWeek == 2 && >= 50 || dayOfWeek == 3 && subtotal >= 50){
         subtotal *= discount;
         total = subtotal * tax + subtotal;
     }else {

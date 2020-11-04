@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Week 6: Simple Calculator</h1>
+        <h2>Christie Crook</h2>
+    </header>
+    <main>
+        <h3>Simple Calculator</h3>
+        <label>Enter Number One: <input type="text" id="number1"></label>
+        <select name="select" id="operator">
+            <option value> </option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+        <label>Enter Number Two: <input type="text" id="number2"></label>
+        <label><button onclick="calcNumbers()">Calculate</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Christie Crook &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/calculator.js">
+
+    </script>
+</body>
+</html>
