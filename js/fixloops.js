@@ -50,7 +50,6 @@ function fixLoops() {
  *  // valid statements (this is not the problem)
  *   i++;
  * }
- * This is wrong because i is already less than 3 so it will never be exicuted.
- * If it were changed to an IF statement with an increase and that the i<3 would be the
- * stopping point then it would exicute.
+ * This is wrong because I don't think you can use the ++ outside of the IF
+ * parameters.
  * ************************/
