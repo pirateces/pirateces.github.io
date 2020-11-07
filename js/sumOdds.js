@@ -1,22 +1,16 @@
 /***********
-* Making a program to be a simple calculator
+* Making a program to add the odd numbers of a given number
 **********/
-function calcNumbers() {
+function addOdds() {
     //Input
     let number1 = parseFloat(document.getElementById("number1").value);
-    let number2 = parseFloat(document.getElementById("number2").value);
-    let operator = document.getElementById("operator").value;
-    let answer;
+    let answer = 0;
+    let i;
 
     //Process
-    if (operator == '+'){
-        answer = number1 + number2;}
-    else if (operator == '-'){
-        answer = number1 - number2;}
-    else if (operator == '*'){
-        answer = number1 * number2;}
-    else {
-        answer = number1 / number2;
+    for (i = 1; i <= number1; i++){
+        answer += i;
+        i++
     }
 
     //Output
