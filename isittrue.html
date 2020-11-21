@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Exam 2</title>
+</head>
+<body>
+    <header>
+        <h1>Exam 2:True</h1>
+        <h2>Christie Crook</h2>
+    </header>
+  <p>Please enter two numbers:</p>
+  <input type="text" id="one" size="5"><br>
+  <input type="text" id="two" size="5">
+  <button type="button" onclick="isTrue()">Click</button>
+  <div id="output"></div>
+
+  <script>
+      /******************
+       * Finding if it is true for various input
+       * *****************/
+     function isTrue(){
+    // Input:
+    let one = parseFloat(document.getElementById("one").value);
+    let two = parseFloat(document.getElementById("two").value);
+    let text = ' ';
+
+     // Processing:
+     if ((one > 5 && two > 5) || one + two > 20)
+        text = 'True';
+    else
+        text = 'False';
+        
+    //I'm just not sure why it doesn't want to work! Is there no complex
+    // && and || statements in JavaScript?
+
+     // Output:
+     document.getElementById('output').innerHTML = text;
+     }
+  </script>
+</body>
+</html>

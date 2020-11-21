@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Powers</title>
+</head>
+<body>
+    <header>
+        <h1>Exam 2:Powers</h1>
+        <h2>Christie Crook</h2>
+    </header>
+    <main>
+        <h3>Displaying powers</h3>
+        <label><button onclick="powerTable()">Add Numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Christie Crook &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        /***********
+        * Making a program to add the odd numbers of a given number
+        **********/
+        function powerTable() {
+        //Input
+        let number1 = 2;
+        let tableLimit = 31;
+        let answer = 0;
+        let i;
+        let text = " ";
+
+        //Process
+        for (i = 1; i <= tableLimit; i++){
+            answer = number1 ** i;
+            if ( i == 1 )
+            {
+                text = answer;
+            }
+            text += ", " + answer;
+            }
+
+        //Output
+        document.getElementById('output').innerHTML = text;
+  
+        }
+
+    </script>
+</body>
+</html>

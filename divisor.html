@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Divisors</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exam 2: Divisors</h1>
+        <h2>Christie Crook</h2>
+    </header>
+    <main>
+        <h3>Inputs</h3>
+        <label>Start: <input type="text" id="start"></label>
+        <label>End: <input type="text" id="end"></label>
+        <label>Divisor: <input type="text" id="divisor"></label>
+        <label><button onclick="divisors()">Figure</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Christie Crook &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        /***********
+        * Making a program to add the odd numbers of a given number
+        **********/
+        function divisors() {
+            //Input
+            let start = parseFloat(document.getElementById("start").value);
+            let end = parseFloat(document.getElementById("end").value);
+            let divisor = parseFloat(document.getElementById("divisor").value);
+            let text = ' ';
+            let i = 0;
+
+            //Process
+            for (i = start; i <=  end; i++) {
+                if (i % divisor == 0){
+                    text += i + " ";
+                }
+            }
+
+            //Output
+            document.getElementById('output').innerHTML = text;
+
+        }
+
+    </script>
+</body>
+
+</html>
