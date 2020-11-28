@@ -1,7 +1,7 @@
 /***********
 * Making a program to calculate investment
 **********/
-function investFunction() {
+function doFV() {
     //Input
     let amountInvested = parseFloat(document.getElementById("amountInvested").value);
     let annualRate = parseFloat(document.getElementById("annualRate").value);
