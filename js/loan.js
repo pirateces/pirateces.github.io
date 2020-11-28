@@ -1,14 +1,24 @@
 /***********
-* Making a program to calculate a loan
+* Making a program to calculate loan payment
 **********/
-function loanFun() {
+function doPayment() {
     //Input
-    let pounds = parseFloat(document.getElementById("pounds").value);
+    let amountInvested = parseFloat(document.getElementById("amountInvested").value);
+    let annualRate = parseFloat(document.getElementById("annualRate").value);
+    let numOfYears = parseFloat(document.getElementById("noYears").value);
+    let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
+    let FV = 0;
 
     //Process
-    let kilograms = pounds * 0.453592;
-    let kilos = kilograms.toFixed(1);
+    function computeFutureValue(amountInvested, annualRate, numOfYears, periodsPerYear)
 
     //Output
     document.getElementById('output').innerHTML = "The conversion is " + kilos + "Kg.";
+}
+function computeFutureValue(a, annualRate, numOfYears, periodsPerYear){
+    //process for the calcuations
+    let r = annualRate/12;
+    let n = numOfYears * periodsPerYear;
+    let f = a * Math.pow((1 + r),n);
+    return f;
 }
