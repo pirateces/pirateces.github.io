@@ -3,18 +3,20 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Basic HTML</title>
+    <title>Loan Calculator</title>
 </head>
 <body>
     <header>
-        <h1>Week 4: Add Two Numbers</h1>
+        <h1>Week 11: Loan Calculator</h1>
         <h2>Christie Crook</h2>
     </header>
     <main>
-        <h3>Add Two Numbers</h3>
-        <label>Enter Number One: <input type="text" id="number1"></label>
-        <label>Enter Number Two: <input type="text" id="number2"></label>
-        <label><button onclick="loanFun()">Add Numbers</button></label>
+        <h3>Loan Calculator</h3>
+        <label>Amount Borrowed: <input type="text" id="amountInvested"></label>
+        <label>Annual Rate: <input type="text" id="annualRate"></label>
+        <label>Number of Years: <input type="text" id="noYears"></label>
+        <label>Periods per Year: <input type="text" id="periodsPerYear"></label>
+        <label><button onclick="doFV()">Compute Future value</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
