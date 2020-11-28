@@ -1,6 +1,9 @@
 /***********
 * Making a program to calculate loan payment
 **********/
+function selector() {
+    let pick = document.getElementById("selector").value;
+}
 function doPayment() {
     //Input
     let amountInvested = parseFloat(document.getElementById("amountInvested").value);
