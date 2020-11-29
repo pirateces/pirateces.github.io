@@ -3,22 +3,49 @@
 **********/
 function selector() {
     let pick = document.getElementById("selector").value;
+    if (pick == 'Payment'){
+        function doPayment()
+    }
+    else {
+        function doBalance()
+    }
 }
 function doPayment() {
     //Input
-    let amountInvested = parseFloat(document.getElementById("amountInvested").value);
+    let amountBorrowed = parseFloat(document.getElementById("amountBorrowed").value);
     let annualRate = parseFloat(document.getElementById("annualRate").value);
     let numOfYears = parseFloat(document.getElementById("noYears").value);
     let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
-    let FV = 0;
+    let Payment = 0;
 
     //Process
-    function computeFutureValue(amountInvested, annualRate, numOfYears, periodsPerYear)
+    function computePayment(amountBorrowed, annualRate, numOfYears, periodsPerYear)
 
     //Output
-    document.getElementById('output').innerHTML = "The conversion is " + kilos + "Kg.";
+    document.getElementById('output').innerHTML = Payment;
 }
-function computeFutureValue(a, annualRate, numOfYears, periodsPerYear){
+function computePayment(a, annualRate, numOfYears, periodsPerYear){
+    //process for the calcuations
+    let r = annualRate/12;
+    let n = numOfYears * periodsPerYear;
+    let f = a * Math.pow((1 + r),n);
+    return f;
+}
+function doBalance() {
+    //Input
+    let amountBorrowed = parseFloat(document.getElementById("amountBorrowed").value);
+    let annualRate = parseFloat(document.getElementById("annualRate").value);
+    let numOfYears = parseFloat(document.getElementById("noYears").value);
+    let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
+    let Balance = 0;
+
+    //Process
+    function computeBalance(amountBorrowed, annualRate, numOfYears, periodsPerYear)
+
+    //Output
+    document.getElementById('output').innerHTML = Payment;
+}
+function computeBalance(a, annualRate, numOfYears, periodsPerYear){
     //process for the calcuations
     let r = annualRate/12;
     let n = numOfYears * periodsPerYear;
