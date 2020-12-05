@@ -16,13 +16,13 @@ function doPayment() {
     let annualRate = parseFloat(document.getElementById("annualRate").value);
     let numOfYears = parseFloat(document.getElementById("noYears").value);
     let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
-    let Payment = 0;
 
     //Process
-    function computePayment(amountBorrowed, annualRate, numOfYears, periodsPerYear)
+    let Payment = computePayment(amountBorrowed, annualRate, numOfYears, periodsPerYear);
+    let p = Payment.toFixed(2);
 
     //Output
-    document.getElementById('output').innerHTML = Payment;
+    document.getElementById('output').innerHTML = '$' + p;
 }
 function computePayment(a, annualRate, numOfYears, periodsPerYear){
     //process for the calcuations
@@ -37,13 +37,13 @@ function doBalance() {
     let annualRate = parseFloat(document.getElementById("annualRate").value);
     let numOfYears = parseFloat(document.getElementById("noYears").value);
     let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
-    let Balance = 0;
 
     //Process
-    function computeBalance(amountBorrowed, annualRate, numOfYears, periodsPerYear)
+    let Balance = computeBalance(amountBorrowed, annualRate, numOfYears, periodsPerYear);
+    let b = Balance.toFixed(2);
 
     //Output
-    document.getElementById('output').innerHTML = Payment;
+    document.getElementById('output').innerHTML = '$' + b;
 }
 function computeBalance(a, annualRate, numOfYears, periodsPerYear){
     //process for the calcuations
